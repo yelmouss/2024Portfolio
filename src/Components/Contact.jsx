@@ -94,12 +94,14 @@ const Contact = () => {
                 <Form.Label>Email:</Form.Label>
                 <Form.Control type="email" name="to"
                   placeholder='your@email.me'
+                  className='bg-transparent textlightbrand text-light'
                   value={formData.to} onChange={handleInputChange} required />
               </Form.Group>
               <Form.Group controlId="subject">
                 <Form.Label>Subject:</Form.Label>
                 <Form.Control type="text" name="subject"
                   placeholder='Interested in Working Together?'
+                  className='bg-transparent textlightbrand '
                   value={formData.subject} onChange={handleInputChange} required />
               </Form.Group>
               <Form.Group controlId="html">
@@ -107,6 +109,7 @@ const Contact = () => {
                 <Form.Control as="textarea" rows={3}
                   name="html" value={formData.html}
                   placeholder='Project or idea description'
+                  className='bg-transparent textlightbrand '
                   onChange={handleInputChange} required />
               </Form.Group>
             </Fade>

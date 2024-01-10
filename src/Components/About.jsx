@@ -37,7 +37,10 @@ const About = () => {
                 <br />
                 <h5 className='textlightbrand'> Passionate about new technologies and Software Development,
                  I have been self-taught in web development since my time in middle school. My journey has been driven by a continuous desire to learn and explore the ever-evolving field of web development.</h5>
-                <Row g={2}>
+             
+             <h6>Personal Infos :</h6>
+             
+                <Row lg={2} xs={1}>
                   <Col>
                     <ul>
                       <li> Birthday:24 October 1994</li>
