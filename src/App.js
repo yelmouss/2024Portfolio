@@ -1,25 +1,53 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
 
-function App() {
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './Components/Home';
+import About from './Components/About';
+import Contact from './Components/Contact';
+import Header from './Components/Header';
+import Works from './Components/Works';
+import Footer from './Components/Footer';
+import Font from 'react-font';
+
+const App = () => {
+
+  const [dark, updateDark] = useState(null);
+  const ModeDark = JSON.parse(localStorage.getItem("dark"));
+
+  React.useEffect(() => {
+    if (ModeDark) {
+      updateDark(ModeDark);
+
+    }
+  }, [ModeDark]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+     <Font family='Genos'>
+     <Router>
+
+<Header dark={dark} updateDark={updateDark} />
+<Routes>
+  <Route
+    path="/"
+    element={
+      <>
+        <Home />
+        <About />
+        <Works />
+        <Contact />
+      </>
+    }
+  />
+</Routes>
+<Footer />
+
+</Router>
+     </Font>
+   
+    </>
+
   );
-}
+};
 
 export default App;
