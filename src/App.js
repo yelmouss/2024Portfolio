@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -13,7 +13,6 @@ import Services from './Components/Services';
 const App = () => {
   useEffect(() => {
     ReactGA.initialize('G-NSE8GHV1SG');
-    ReactGA.pageview(window.location.pathname);
   }, []);
 
   return (
