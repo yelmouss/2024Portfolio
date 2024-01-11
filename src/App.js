@@ -9,6 +9,7 @@ import Header from './Components/Header';
 import Works from './Components/Works';
 import Footer from './Components/Footer';
 import Font from 'react-font';
+import Services from './Components/Services';
 
 const App = () => {
 
@@ -23,28 +24,29 @@ const App = () => {
   }, [ModeDark]);
   return (
     <>
-     <Font family='Genos'>
-     <Router>
+      <Font family='Genos'>
+        <Router>
 
-<Header dark={dark} updateDark={updateDark} />
-<Routes>
-  <Route
-    path="/"
-    element={
-      <>
-        <Home />
-        <About />
-        <Works />
-        <Contact />
-      </>
-    }
-  />
-</Routes>
-<Footer />
+          <Header dark={dark} updateDark={updateDark} />
+          <Routes>
+            <Route
+              path="/"
+              element={
+                <>
+                  <Home />
+                  <Services />
+                  <About />
+                  <Works />
+                  <Contact />
+                </>
+              }
+            />
+          </Routes>
+          <Footer />
 
-</Router>
-     </Font>
-   
+        </Router>
+      </Font>
+
     </>
 
   );

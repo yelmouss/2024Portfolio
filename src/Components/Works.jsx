@@ -47,7 +47,7 @@ function Works() {
 
 
     <Container id='Works' fluid>
-      <Slide direction="up" className='d-flex flex-column align-items-center text-light'>
+      <Slide direction="down" className='d-flex flex-column align-items-center text-light'>
         <Fade cascade className='mt-5'>
 
           <h2 className='B89 fs-1 mt-5 textlightbrand'>My Works</h2>

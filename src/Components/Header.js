@@ -6,7 +6,7 @@ import MyImage from '../img/Geek.png';
 import Font from 'react-font';
 import { AiOutlineFullscreen, AiOutlineFullscreenExit } from "react-icons/ai";
 
-const Header = ({ dark, updateDark }) => {
+const Header = () => {
   const [activeSection, setActiveSection] = useState('');
   const [isFullscreen] = useState(false);
   const handleScroll = (sectionId) => {
@@ -36,7 +36,7 @@ const Header = ({ dark, updateDark }) => {
 
     const handleScrollEvent = () => {
       const scrollPosition = window.scrollY + window.innerHeight / 2;
-      const sections = ['Home', 'About', 'Works', 'Contact'];
+      const sections = ['Home', 'About', 'Works', 'Contact', 'Services'];
 
       for (const section of sections) {
         const element = document.getElementById(section);
@@ -64,8 +64,8 @@ const Header = ({ dark, updateDark }) => {
       expand="lg"
       className="bg-opacity-75"
       sticky="top"
-      bg={`${dark ? 'light' : 'dark'}`}
-      variant={`${dark ? 'light' : 'dark'}`}
+      bg={`dark`}
+      variant={`dark`}
     >
       <Container>
         <Navbar.Brand href="/">
@@ -95,6 +95,11 @@ const Header = ({ dark, updateDark }) => {
             <Nav.Link href="#Home" onClick={() => handleScroll('Home')} className={activeSection === 'Home' ? 'active' : ''}>
               Home
             </Nav.Link>
+            <Nav.Link href="#Services" onClick={() => handleScroll('Services')} className={activeSection === 'Services' ? 'active' : ''}>
+            Services
+            </Nav.Link>
+
+            
             <Nav.Link href="#About" onClick={() => handleScroll('About')} className={activeSection === 'About' ? 'active' : ''}>
               About
             </Nav.Link>
