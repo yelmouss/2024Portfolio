@@ -1,6 +1,5 @@
-// App.js
-
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import ReactGA from 'react-ga';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Components/Home';
 import About from './Components/About';
@@ -12,22 +11,16 @@ import Font from 'react-font';
 import Services from './Components/Services';
 
 const App = () => {
+  useEffect(() => {
+    ReactGA.initialize('UA-233672292-1');
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
-  const [dark, updateDark] = useState(null);
-  const ModeDark = JSON.parse(localStorage.getItem("dark"));
-
-  React.useEffect(() => {
-    if (ModeDark) {
-      updateDark(ModeDark);
-
-    }
-  }, [ModeDark]);
   return (
     <>
       <Font family='Genos'>
         <Router>
-
-          <Header dark={dark} updateDark={updateDark} />
+          <Header />
           <Routes>
             <Route
               path="/"
@@ -43,12 +36,9 @@ const App = () => {
             />
           </Routes>
           <Footer />
-
         </Router>
       </Font>
-
     </>
-
   );
 };
 
