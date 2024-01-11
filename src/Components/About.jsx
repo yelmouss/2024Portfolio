@@ -15,7 +15,7 @@ const About = () => {
   return (
 
 
-    <div id="About" className=' d-flex flex-column align-items-center  text-light  pt-5'>
+    <div id="About" className='container d-flex flex-column align-items-center  text-light  pt-5'>
       <Slide direction='right' >
 
 
