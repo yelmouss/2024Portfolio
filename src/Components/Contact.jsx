@@ -9,10 +9,14 @@ import MarkerImage from '../img/yass.png';
 import { RiMailSendLine } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
 import { CiInstagram } from "react-icons/ci";
-import { FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram  } from "react-icons/fa";
 import { AiOutlineGoogle } from "react-icons/ai";
-
-const position = [34.0042117,-6.8586604];
+const googleColor = '#4285F4'; // Couleur de Google
+const githubColor = '#333'; // Couleur de GitHub
+const instagramColor = '#E4405F'; // Couleur d'Instagram
+const whatsappColor = '#25D366'; // Couleur de WhatsApp
+const linkedinColor = '#0077B5'; // Couleur de LinkedIn
+const position = [34.0042117, -6.8586604];
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -78,35 +82,46 @@ const Contact = () => {
               <div className="social-links">
                 <div className="networks">
                   <div className="netbox">
-                  
-                  <NavLink
+
+                    <NavLink
                       to={'https://www.google.com/maps/place/Yelmouss/@34.0042117,-6.8586604,17z/data=!3m1!4b1!4m6!3m5!1s0xda76dbbbc4493b7:0x646abb81a920494f!8m2!3d34.0042073!4d-6.8560801!16s%2Fg%2F11s4g9j0ld?entry=ttu'}
                       target='_blank'
-                      className="icon BtnCardProject2 fw-bold fs-3 "
-                      data-tip="Network 1" ><AiOutlineGoogle /></NavLink>
-                  <NavLink
+                      className="icon BtnCardProject2 fw-bold fs-3"
+                      data-tip="Network 1"
+                      style={{ color: googleColor }}
+                    ><AiOutlineGoogle  /></NavLink>
+
+                    <NavLink
                       to={'https://github.com/yelmouss/'}
                       target='_blank'
-                      className="icon BtnCardProject2 fw-bold fs-3 "
-                      data-tip="Network 1" ><FaGithub /></NavLink>
-                    <NavLink to={'https://www.instagram.com/yelmouss/'}
+                      className="icon BtnCardProject2 fw-bold fs-3"
+                      data-tip="Network 1"
+                      style={{ color: githubColor }}
+                    ><FaGithub /></NavLink>
+
+                    <NavLink
+                      to={'https://www.instagram.com/yelmouss/'}
                       target='_blank'
-                      className="icon BtnCardProject2 fw-bold fs-3 "
-                      data-tip="Network 1" >
-                      <CiInstagram />
-                    </NavLink>
-                    <NavLink className="icon BtnCardProject2 fw-bold fs-3 "
+                      className="icon BtnCardProject2 fw-bold fs-3"
+                      data-tip="Network 1"
+                      style={{ color: instagramColor }}
+                    ><FaInstagram  /></NavLink>
+
+                    <NavLink
+                      className="icon BtnCardProject2 fw-bold fs-3"
                       to={'https://wa.me/00212612865681?text=Interested%20in%20collaborating%20%20?'}
                       target='_blank'
                       data-tip="Network 1"
+                      style={{ color: whatsappColor }}
                     ><FaWhatsapp /></NavLink>
-              
+
                     <NavLink
                       to={'https://ma.linkedin.com/in/yelmouss'}
                       target='_blank'
-                      className="icon BtnCardProject2 fw-bold fs-3 "
-                      data-tip="Network 1" ><FaLinkedin /></NavLink>
-
+                      className="icon BtnCardProject2 fw-bold fs-3"
+                      data-tip="Network 1"
+                      style={{ color: linkedinColor }}
+                    ><FaLinkedin /></NavLink>
                   </div>
                 </div>
               </div>
