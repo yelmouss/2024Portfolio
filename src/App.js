@@ -12,7 +12,7 @@ import Services from './Components/Services';
 
 const App = () => {
   useEffect(() => {
-    ReactGA.initialize('UA-233672292-1');
+    ReactGA.initialize('G-NSE8GHV1SG');
     ReactGA.pageview(window.location.pathname);
   }, []);
 
