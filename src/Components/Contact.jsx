@@ -54,7 +54,7 @@ const Contact = () => {
 
     <div id="Contact" className='pt-5'>
       <Slide direction='down' className='d-flex flex-column align-items-center p-2 text-light text-center' >
-        <h2 className='B89 fs-1 textlightbrand align-self-center'>Get in touch</h2>
+        <h2 className='B89 fs-1 textlightbrand align-self-center  shadow-lg'>Get in touch</h2>
         <p> Feel free to reach out for inquiries, collaboration, or just to say hello </p>
         <div className='container textlightbrand'>
 
@@ -62,6 +62,44 @@ const Contact = () => {
           <Row lg={2} xs={1} className='text-start p-2 d-flex align-items-start'>
 
 
+          
+            <Col className='fs-5 d-flex flex-column justify-content-end  rounded '>
+
+
+              <Form onSubmit={handleSubmit} className='  fs-5 text-center'>
+
+                <Fade cascade>
+                  <Form.Group controlId="to">
+                    <Form.Label>Email:</Form.Label>
+                    <Form.Control type="email" name="to"
+                      placeholder='your@email.me'
+                      className='bg-light bg-opacity-50'
+                      value={formData.to} onChange={handleInputChange} required />
+                  </Form.Group>
+                  <Form.Group controlId="subject">
+                    <Form.Label>Subject:</Form.Label>
+                    <Form.Control type="text" name="subject"
+                      placeholder='Interested in Working Together?'
+                      className='bg-light bg-opacity-50'
+                      value={formData.subject} onChange={handleInputChange} required />
+                  </Form.Group>
+                  <Form.Group controlId="html">
+                    <Form.Label>Your Message:</Form.Label>
+                    <Form.Control as="textarea" rows={3}
+                      name="html" value={formData.html}
+                      placeholder='Project or idea description'
+                      className='bg-light bg-opacity-50'
+                      onChange={handleInputChange} required />
+                  </Form.Group>
+                </Fade>
+                <hr />
+                <button type="submit" className=' BtnCardProject2 fw-bold textlightbrand' disabled={loading}>
+                  {loading ? 'Sending...' : <>Send Email <RiMailSendLine /></>}
+                </button>
+
+              </Form>
+              <p>{responseMessage}</p>
+            </Col>
             <Col className='fs-5 d-flex flex-column justify-content-end'>
               <Fade cascade>
 
@@ -125,43 +163,6 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-            </Col>
-            <Col className='fs-5 d-flex flex-column justify-content-end  rounded '>
-
-
-              <Form onSubmit={handleSubmit} className='  fs-5 text-center'>
-
-                <Fade cascade>
-                  <Form.Group controlId="to">
-                    <Form.Label>Email:</Form.Label>
-                    <Form.Control type="email" name="to"
-                      placeholder='your@email.me'
-                      className='bg-light bg-opacity-50'
-                      value={formData.to} onChange={handleInputChange} required />
-                  </Form.Group>
-                  <Form.Group controlId="subject">
-                    <Form.Label>Subject:</Form.Label>
-                    <Form.Control type="text" name="subject"
-                      placeholder='Interested in Working Together?'
-                      className='bg-light bg-opacity-50'
-                      value={formData.subject} onChange={handleInputChange} required />
-                  </Form.Group>
-                  <Form.Group controlId="html">
-                    <Form.Label>Your Message:</Form.Label>
-                    <Form.Control as="textarea" rows={3}
-                      name="html" value={formData.html}
-                      placeholder='Project or idea description'
-                      className='bg-light bg-opacity-50'
-                      onChange={handleInputChange} required />
-                  </Form.Group>
-                </Fade>
-                <hr />
-                <button type="submit" className=' BtnCardProject2 fw-bold textlightbrand' disabled={loading}>
-                  {loading ? 'Sending...' : <>Send Email <RiMailSendLine /></>}
-                </button>
-
-              </Form>
-              <p>{responseMessage}</p>
             </Col>
           </Row>
 

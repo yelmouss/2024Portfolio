@@ -15,7 +15,7 @@ const Home = () => {
 
         <Fade className='container d-flex flex-column align-items-start p-2 justify-content-start' cascade>
           <Slide direction="up" >
-            <h2 className='B89 fs-1  align-self-center textlightbrand '>Welcome to my Portfolio</h2>
+            <h2 className='B89 fs-1  align-self-center textlightbrand  shadow-lg'>Welcome to my Portfolio</h2>
           </Slide>
           <Slide direction="right" >
             <Typed

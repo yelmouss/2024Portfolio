@@ -45,7 +45,15 @@ body {
   overflow-x: hidden;
   color: #C9D6DF;
 }
-
+.bgWavy{
+  background: url('./img/wave-dark.svg'),#1E2022;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top;
+  animation: move_wave 15s linear infinite;
+  overflow-x: hidden;
+}
 
 
 @keyframes move_wave {

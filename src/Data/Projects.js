@@ -1,5 +1,10 @@
 export const ProjectsData = [
-  
+  {
+    title: "Coup de Food",
+    description: `Application de vente de paniers Frais`,
+    image: "./img/CoupdeFood.png",
+    link: "https://coupdefood.ma/",
+  },
   {
     title: "KASA",
     description: `Application de location immobilière`,

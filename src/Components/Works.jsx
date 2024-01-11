@@ -50,7 +50,7 @@ function Works() {
       <Slide direction="down" className='d-flex flex-column align-items-center text-light'>
         <Fade cascade className='mt-5'>
 
-          <h2 className='B89 fs-1 mt-5 textlightbrand'>My Works</h2>
+          <h2 className='B89 fs-1 mt-5 textlightbrand  shadow-lg'>My Works</h2>
           <p>Some Projects Using WEB technologies</p>
         </Fade>
       </Slide>

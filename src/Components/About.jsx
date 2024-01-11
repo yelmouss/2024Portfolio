@@ -19,7 +19,7 @@ const About = () => {
       <Slide direction='right'className='text-center' >
 
 
-        <h2 className='B89 fs-1 textlightbrand align-self-center'>About me</h2>
+        <h2 className='B89 fs-1 textlightbrand align-self-center  shadow-lg'>About me</h2>
         <p className=' align-self-center'>You can find below more information about me, my Stack and my Exp</p>
 
       </Slide>
