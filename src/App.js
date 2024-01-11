@@ -15,6 +15,7 @@ const App = () => {
     ReactGA.initialize('G-NSE8GHV1SG');
   }, []);
 
+  
   return (
     <>
       <Font family='Genos'>
