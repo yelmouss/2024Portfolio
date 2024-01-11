@@ -26,7 +26,7 @@ const About = () => {
 
       <Container className='d-flex flex-column gap-1  ' >
         <Slide direction='down' className=' align-self-center text-center' >
-          <img src={Me} alt="Ma Photo" className='img-fluid col-lg-4 col-6 rounded rounded-circle bgBrand2 p-2' />
+          <img src={Me} alt="Ma  de profil jolie" className='img-fluid col-lg-4 col-6 rounded rounded-circle bgBrand2 p-2' />
         </Slide>
         <hr />
         <Fade cascade>
@@ -106,7 +106,7 @@ const About = () => {
           <ul className="list-inline events">
             <li className="list-inline-item event-list">
               <div className="px-4">
-                <img src={Webhelp} alt="cc 1" className='ExpImg' />
+                <img src={Webhelp} alt="Mon  cc 1" className='ExpImg' />
                 <div className="event-date bg-dark  fs-bold">
                   2015
                 </div>
@@ -118,7 +118,7 @@ const About = () => {
             </li>
             <li className="list-inline-item event-list">
               <div className="px-4">
-                <img src={Intelcia} alt="cc 2" className='ExpImg' />
+                <img src={Intelcia} alt=" MonImage cc 2" className='ExpImg' />
                 <div className="event-date bg-dark fs-bold">
                   2017
                 </div>
@@ -130,7 +130,7 @@ const About = () => {
             </li>
             <li className="list-inline-item event-list">
               <div className="px-4">
-                <img src={Intelcia} alt="cc 3" className='ExpImg' />
+                <img src={Intelcia} alt="MonImage cc 3" className='ExpImg' />
                 <div className="event-date bg-dark  fs-bold">
                   2020
                 </div>
@@ -143,7 +143,7 @@ const About = () => {
 
             <li className="list-inline-item event-list">
               <div className="px-4">
-                <img src={GomyCode} alt="cc 4" className='ExpImg ' />
+                <img src={GomyCode} alt=" MonImage cc 4" className='ExpImg ' />
                 <div className="event-date bg-dark  fs-bold">
                   2023
                 </div>

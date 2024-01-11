@@ -8,7 +8,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import MarkerImage from '../img/yass.png';
 import { RiMailSendLine } from "react-icons/ri";
 import { NavLink } from 'react-router-dom';
-import { CiInstagram } from "react-icons/ci";
+
 import { FaWhatsapp, FaGithub, FaLinkedin, FaInstagram  } from "react-icons/fa";
 import { AiOutlineGoogle } from "react-icons/ai";
 const googleColor = '#4285F4'; // Couleur de Google

@@ -273,8 +273,8 @@ ul{
 .networks {
   width: 100%;
   display: flex;
-  justify-content: start;
-  align-items: start;
+  justify-content: flex-start;
+  align-items:  flex-start;
   padding: 2%;
 }
 
