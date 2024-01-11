@@ -126,7 +126,7 @@ const Contact = () => {
                 </div>
               </div>
             </Col>
-            <Col className='fs-5 d-flex flex-column justify-content-end'>
+            <Col className='fs-5 d-flex flex-column justify-content-end  rounded '>
 
 
               <Form onSubmit={handleSubmit} className='  fs-5 text-center'>
@@ -136,14 +136,14 @@ const Contact = () => {
                     <Form.Label>Email:</Form.Label>
                     <Form.Control type="email" name="to"
                       placeholder='your@email.me'
-                      className='bg-transparent textlightbrand text-light'
+                      className='bg-light bg-opacity-50'
                       value={formData.to} onChange={handleInputChange} required />
                   </Form.Group>
                   <Form.Group controlId="subject">
                     <Form.Label>Subject:</Form.Label>
                     <Form.Control type="text" name="subject"
                       placeholder='Interested in Working Together?'
-                      className='bg-transparent textlightbrand '
+                      className='bg-light bg-opacity-50'
                       value={formData.subject} onChange={handleInputChange} required />
                   </Form.Group>
                   <Form.Group controlId="html">
@@ -151,7 +151,7 @@ const Contact = () => {
                     <Form.Control as="textarea" rows={3}
                       name="html" value={formData.html}
                       placeholder='Project or idea description'
-                      className='bg-transparent textlightbrand '
+                      className='bg-light bg-opacity-50'
                       onChange={handleInputChange} required />
                   </Form.Group>
                 </Fade>

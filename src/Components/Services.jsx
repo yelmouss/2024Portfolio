@@ -6,7 +6,7 @@ import { MdOutlineSettingsApplications } from "react-icons/md";
 
 function Services() {
     return (
-        <div id='Services'>
+        <div id='Services' className='container'>
             <Container className='d-flex flex-column align-items-center text-light pt-5'>
                 <h2 className='B89 fs-1 textlightbrand align-self-center'>My services</h2>
                 <p className='align-self-center'>What I Do</p>

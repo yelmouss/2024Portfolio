@@ -16,7 +16,7 @@ const About = () => {
 
 
     <div id="About" className='container d-flex flex-column align-items-center  text-light  pt-5'>
-      <Slide direction='right' >
+      <Slide direction='right'className='text-center' >
 
 
         <h2 className='B89 fs-1 textlightbrand align-self-center'>About me</h2>
