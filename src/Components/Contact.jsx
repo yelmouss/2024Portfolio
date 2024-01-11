@@ -147,7 +147,7 @@ const Contact = () => {
 
                     <NavLink
                       className="icon BtnCardProject2 fw-bold fs-3"
-                      to={'https://wa.me/00212612865681?text=Interested%20in%20collaborating%20%20?'}
+                      to={'https://wa.me/00212612865681?text=Interested%20in%20collaborating'}
                       target='_blank'
                       data-tip="Network 1"
                       style={{ color: whatsappColor }}
