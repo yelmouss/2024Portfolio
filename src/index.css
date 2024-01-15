@@ -332,3 +332,56 @@ ul{
   background-color: #52616B;
 }
 
+
+@keyframes rotateOnce {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.bouncy {
+  animation: bn53bounce 4s infinite;
+}
+
+@keyframes bn53bounce {
+  5%,
+  50% {
+    transform: scale(1);
+  }
+
+  10% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1);
+  }
+
+  20% {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  25% {
+    transform: scale(1) rotate(3deg);
+  }
+
+  30% {
+    transform: scale(1) rotate(-3deg);
+  }
+
+  35% {
+    transform: scale(1) rotate(2deg);
+  }
+
+  40% {
+    transform: scale(1) rotate(0);
+  }
+}
+
+
+.imgGeek {
+  animation: rotateOnce 0.8s forwards;
+}

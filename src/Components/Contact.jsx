@@ -108,6 +108,7 @@ const Contact = () => {
                   <TileLayer
                     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                    // url='https://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}'
                   />
                   <Marker position={position}   >
                     <Popup>

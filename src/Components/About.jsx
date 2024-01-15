@@ -26,7 +26,7 @@ const About = () => {
 
       <Container className='d-flex flex-column gap-1  ' >
         <Slide direction='down' className=' align-self-center text-center' >
-          <img src={Me} alt="Ma  de profil jolie" className='img-fluid col-lg-4 col-6 rounded rounded-circle bgBrand2 p-2' />
+          <img src={Me} alt="Ma  de profil jolie" className='img-fluid col-lg-4 col-6 rounded rounded-circle bgBrand2 p-2 bouncy' />
         </Slide>
         <hr />
         <Fade cascade>

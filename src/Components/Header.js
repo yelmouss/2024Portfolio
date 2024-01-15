@@ -80,7 +80,7 @@ const Header = () => {
 
             {" yelmouss".split("").map((letter, index) => {
               return (
-                <span key={index} className="text-fun-pink textlightbrand fs-1 ">
+                <span key={index} className="text-fun-pink textlightbrand fs-1  ">
                   {letter}
                 </span>
               );

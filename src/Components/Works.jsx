@@ -58,13 +58,13 @@ function Works() {
       <Container className='p-5 rounded' fluid>
         <Slider {...settings}>
           {ProjectsData.map((item, index) => (
-            <div className='p-2 text-center' key={index}>
-             <NavLink className={'fw-bold BtnCardProject'} to={item.link} target="_blank">Show the Project </NavLink>
+            <div className='p-2 text-center ' key={index}>
+             <NavLink className={'fw-bold BtnCardProject '} to={item.link} target="_blank">Show the Project </NavLink>
 
               <Card className='text-center bg-dark bg-opacity-25 CardProject'>
                 <Card.Img variant='top' src={item.image} className='ProjectImage' />
                 <div className='card-header bgBrandDark'>
-                  <h3 className='text-truncate fs-5 textlightbrand bgBrandDark p-2'>{item.title}</h3>
+                  <h3 className='text-truncate fs-5 textlightbrand bgBrandDark p-2 bouncy'>{item.title}</h3>
                   <p className='text-truncate textlightbrand  p-2'>{item.description}</p>
                 </div>
               </Card>
