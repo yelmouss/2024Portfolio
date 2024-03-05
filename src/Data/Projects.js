@@ -57,8 +57,8 @@ export const ProjectsData = [
     {
       title: "Kanap",
       description: `E-commerce Utilisant Javascript`,
-      image: "https://yelmouss.github.io/Kanap/front/images/banniere.png",
-      link: "https://yelmouss.github.io/Kanap/front/html/index.html",
+      image: "https://kanapro.vercel.app/images/banniere.png",
+      link: "https://kanapro.vercel.app/html/",
     },
     {
       title: "SCSS Oh My-Food",
