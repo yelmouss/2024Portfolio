@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
 
-    <div id="Contact" className='pt-5'>
+    <div id="Contact">
       <Slide direction='down' className='d-flex flex-column align-items-center p-2 text-light text-center' >
         <h2 className='B89 fs-1 textlightbrand align-self-center  shadow-lg'>Get in touch</h2>
         <p> Feel free to reach out for inquiries, collaboration, or just to say hello </p>

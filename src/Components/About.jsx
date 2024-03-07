@@ -103,6 +103,30 @@ const About = () => {
                     </ul>
                   </Col>
                 </Row>
+                <h2 className='textlightbrand'><GrCertificate /> Web Developer</h2>
+                <p> 2020 - 2023 </p>
+                <p>
+                  Received a Web Developer diploma from OpenClassrooms between 2020 and 2023.
+                   The program involved the development of websites for the Internet and intranets, 
+                   encompassing tasks ranging from creating simple plain text static pages to building complex web applications.
+                   
+                </p>
+
+                <br />
+                <h2 className='textlightbrand'> <GrCertificate /> Bachelor in economics & business management</h2>
+                <p>2011 - 2014</p>
+                <p> Completed the Bachelor's program in Science at Science City between 2010 and 2014. The coursework covered a range of scientific disciplines, providing a solid foundation for further academic and professional pursuits.</p>
+               
+              
+
+                <h5 className='textlightbrand'>  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
+
+              </Slide>
+
+            </Col>
+            <Col>
+              <Slide direction='right'>
+              <Container>
 
                 <Container className='text-center'>
                   <h2>Experience  </h2>
@@ -139,25 +163,6 @@ const About = () => {
 
                 </Container>
              
-              </Slide>
-            </Col>
-            <Col>
-              <Slide direction='right'>
-              <Container>
-                <h2 className='textlightbrand'><GrCertificate /> Web Developer</h2>
-                <p> 2020 - 2023 </p>
-                <p>
-                  Received a Web Developer diploma from OpenClassrooms between 2020 and 2023.
-                   The program involved the development of websites for the Internet and intranets, 
-                   encompassing tasks ranging from creating simple plain text static pages to building complex web applications.
-                   
-                </p>
-
-                <br />
-                <h2 className='textlightbrand'> <GrCertificate /> Bachelor in economics & business management</h2>
-                <p>2011 - 2014</p>
-                <p> Completed the Bachelor's program in Science at Science City between 2010 and 2014. The coursework covered a range of scientific disciplines, providing a solid foundation for further academic and professional pursuits.</p>
-               
                 <br />
                 <hr />
                   <h2>Certificates  </h2>
@@ -181,7 +186,6 @@ const About = () => {
                     }
 
                   </Slider>
-              <h5 className='textlightbrand'>  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
 
                 </Container>
     
