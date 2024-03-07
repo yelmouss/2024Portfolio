@@ -78,7 +78,7 @@ const Header = () => {
               className="d-inline-block align-end bgBrandLight rounded-circle p-1 imgGeek"
             />
 
-            {" yelmouss".split("").map((letter, index) => {
+            {" Yelmouss".split("").map((letter, index) => {
               return (
                 <span key={index} className="text-fun-pink textlightbrand fs-1  ">
                   {letter}

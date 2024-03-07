@@ -59,7 +59,7 @@ const Home = () => {
                   <Row className='p-2'>
 
                     {TechData.map((item, i) => (
-                      <Col key={i} lg={1} xs={2} >
+                      <Col key={i} lg={1} md={2} xs={2} className='p-1' >
                         <img
                           className="rounded  bg-light rotating img mb-2 p-2 bouncy"
                           width={50}

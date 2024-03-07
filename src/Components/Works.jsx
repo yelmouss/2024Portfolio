@@ -4,12 +4,12 @@ import Slider from 'react-slick';
 import { ProjectsData } from '../Data/Projects';
 import { Fade, Slide } from 'react-awesome-reveal';
 import { NavLink } from 'react-router-dom';
-
+import { TiEyeOutline } from "react-icons/ti";
 function Works() {
   const [slidesToShow, setSlidesToShow] = useState(3); // Par défaut, 3 éléments par diapositive
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     slidesToShow: slidesToShow,
     slidesToScroll: 1,
@@ -48,9 +48,9 @@ function Works() {
 
     <Container id='Works' fluid>
       <Slide direction="down" className='d-flex flex-column align-items-center text-light'>
-        <Fade cascade className='mt-5'>
+        <Fade cascade >
 
-          <h2 className='B89 fs-1 mt-5 textlightbrand  shadow-lg'>My Works</h2>
+          <h2 className='B89 fs-1  textlightbrand  shadow-lg'>My Works</h2>
           <p>Some Projects Using WEB technologies</p>
         </Fade>
       </Slide>
@@ -59,7 +59,7 @@ function Works() {
         <Slider {...settings}>
           {ProjectsData.map((item, index) => (
             <div className='p-2 text-center ' key={index}>
-             <NavLink className={'fw-bold BtnCardProject '} to={item.link} target="_blank">Show the Project </NavLink>
+             <NavLink className={'fw-bold BtnCardProject '} to={item.link} target="_blank"><TiEyeOutline /> Show  </NavLink>
 
               <Card className='text-center bg-dark bg-opacity-25 CardProject'>
                 <Card.Img variant='top' src={item.image} className='ProjectImage' />
