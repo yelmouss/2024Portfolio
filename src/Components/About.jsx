@@ -128,7 +128,7 @@ const About = () => {
               <Slide direction='right'>
               <Container>
 
-                <Container className='text-center'>
+             
                   <h2>Experience  </h2>
                   <br />
                   <Timeline position="alternate">
@@ -161,7 +161,6 @@ const About = () => {
                  
                   {/* <h5 className='textlightbrand'> Committed to delivering high-quality and user-friendly solutions for a seamless online experience</h5> */}
 
-                </Container>
              
                 <br />
                 <hr />
