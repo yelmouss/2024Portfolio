@@ -1,3 +1,6 @@
+
+
+@import url("https://unpkg.com/leaflet@1.6.0/dist/leaflet.css");
 :root {
   --b: 1px;
   /* border thickness */
@@ -6,6 +9,7 @@
   --color: #C9D6DF;
 
 }
+
 
 .textlightbrand {
   color: #C9D6DF;
@@ -20,7 +24,7 @@
 }
 
 .ProjectImage {
-  height: 150px;
+  height: 130px;
   object-fit: cover;
 }
 
@@ -48,10 +52,15 @@ body {
 }
 
 .bgWavy {
-  background: url('./img/wave-dark.svg'), #1E2022;
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background: 
+  url('./img/waveBlack.svg') bottom left no-repeat,
+  linear-gradient(to right, #52616B, #1E2022),
+  url('./img/wave-dark.svg') bottom right no-repeat;
+  /* background-image: , ; */
+
+  /* background-size: cover;
+  background-attachment: fixed; */
+  /* background-repeat: no-repeat; */
   background-position: top;
   animation: move_wave 15s linear infinite;
   overflow-x: hidden;

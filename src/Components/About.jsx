@@ -23,7 +23,7 @@ const About = () => {
     dots: false,
     infinite: true,
     slidesToShow: slidesToShow,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     speed: 2000,
     autoplaySpeed: 6000,
@@ -58,7 +58,7 @@ const About = () => {
       </Slide>
       <Container className='d-flex flex-column gap-1  ' >
         <Slide direction='down' className=' align-self-center text-center' >
-          <img src={Me} alt="Ma  de profil jolie" className='img-fluid col-lg-4 col-6 rounded rounded-circle bgBrand2 p-2 bouncy' />
+          <img src={Me} alt="Ma  de profil jolie" className='img-fluid col-lg-4 col-md-4 col-6 rounded rounded-circle bgBrand2 p-2 bouncy' />
         </Slide>
         <hr />
         <Fade cascade>
@@ -135,15 +135,18 @@ const About = () => {
                   <Slider {...settings}>
                     {
                       Certifs.map((item, index) => (
-                        <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " key={index}>
-                          <NavLink target='_blank' to={item.LinkCert}>
-                            <Card.Img variant="top" src={item.ImageUrl} />
-                          </NavLink>
-                          <Card.Body>
-                            <Card.Title className='text-truncate'>{item.title}
-                            </Card.Title>
-                          </Card.Body>
-                        </Card>
+                        <div className="p-2" key={index}>
+                          <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " >
+                            <NavLink target='_blank' to={item.LinkCert}>
+                              <Card.Img variant="top" src={item.ImageUrl} />
+                            </NavLink>
+                            <Card.Body>
+                              <Card.Title className='text-truncate'>{item.title}
+                              </Card.Title>
+                            </Card.Body>
+                          </Card>
+                        </div>
+
                       ))
                     }
                   </Slider>
