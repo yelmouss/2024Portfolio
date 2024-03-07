@@ -52,7 +52,7 @@ const About = () => {
   }, []);
   return (
     <div id="About" className='container d-flex flex-column align-items-center  text-light  pt-5'>
-      <Slide direction='right' className='text-center' >
+      <Slide direction='up' className='text-center' >
         <h2 className='B89 fs-1 textlightbrand align-self-center  shadow-lg'>About me</h2>
         <p className=' align-self-center'>You can find below more information about me, my Stack and my Exp</p>
       </Slide>
@@ -103,7 +103,7 @@ const About = () => {
               </Slide>
             </Col>
             <Col>
-              <Slide direction='right'>
+              <Slide direction='left'>
                 <Container>
                   <h2>Experience  </h2>
                   <br />

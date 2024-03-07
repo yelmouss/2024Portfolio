@@ -40,7 +40,7 @@ function Services() {
                             </Slide>
                         </Col>
                         <Col md={4}>
-                        <Slide direction='right'>
+                        <Slide direction='up'>
                         <div className="text-center mb-4  p-3 rounded bgWavy  shadow-lg">
                         <MdOutlineSupportAgent  className={'fs-1 textlightbrand'}/>
                                 <Card.Body>
