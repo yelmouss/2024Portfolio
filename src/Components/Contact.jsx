@@ -17,14 +17,12 @@ const instagramColor = '#E4405F'; // Couleur d'Instagram
 const whatsappColor = '#25D366'; // Couleur de WhatsApp
 const linkedinColor = '#0077B5'; // Couleur de LinkedIn
 const position = [34.0042117, -6.8586604];
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     to: '',
     subject: '',
     html: '',
   });
-
   const [responseMessage, setResponseMessage] = useState('');
   const [loading, setLoading] = useState(false);
   const handleInputChange = (e) => {
@@ -34,7 +32,6 @@ const Contact = () => {
       [name]: value,
     });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -49,25 +46,15 @@ const Contact = () => {
       // Set loading back to false after the request is complete
     }
   };
-
   return (
-
     <div id="Contact">
       <Slide direction='down' className='d-flex flex-column align-items-center p-2 text-light text-center' >
         <h2 className='B89 fs-1 textlightbrand align-self-center  shadow-lg'>Get in touch</h2>
         <p> Feel free to reach out for inquiries, collaboration, or just to say hello </p>
         <div className='container textlightbrand'>
-
-
-          <Row lg={2} xs={1} className='text-start p-2 d-flex align-items-start'>
-
-
-          
+          <Row lg={2} xs={1} className='text-start p-2 d-flex align-items-start'>          
             <Col className='fs-5 d-flex flex-column justify-content-end  rounded '>
-
-
               <Form onSubmit={handleSubmit} className='  fs-5 text-center'>
-
                 <Fade cascade>
                   <Form.Group controlId="to">
                     <Form.Label>Email:</Form.Label>
@@ -96,13 +83,11 @@ const Contact = () => {
                 <button type="submit" className=' BtnCardProject2 fw-bold textlightbrand' disabled={loading}>
                   {loading ? 'Sending...' : <>Send Email <RiMailSendLine /></>}
                 </button>
-
               </Form>
               <p>{responseMessage}</p>
             </Col>
             <Col className='fs-5 d-flex flex-column justify-content-end'>
               <Fade cascade>
-
                 <h5>My location </h5>
                 <MapContainer center={position} zoom={13} scrollWheelZoom={false} style={{ height: '242px' }} className='rounded'>
                   <TileLayer
@@ -121,7 +106,6 @@ const Contact = () => {
               <div className="social-links">
                 <div className="networks">
                   <div className="netbox">
-
                     <NavLink
                       to={'https://www.google.com/maps/place/Yelmouss/@34.0042117,-6.8586604,17z/data=!3m1!4b1!4m6!3m5!1s0xda76dbbbc4493b7:0x646abb81a920494f!8m2!3d34.0042073!4d-6.8560801!16s%2Fg%2F11s4g9j0ld?entry=ttu'}
                       target='_blank'
@@ -129,7 +113,6 @@ const Contact = () => {
                       data-tip="Network 1"
                       style={{ color: googleColor }}
                     ><AiOutlineGoogle  /></NavLink>
-
                     <NavLink
                       to={'https://github.com/yelmouss/'}
                       target='_blank'
@@ -137,7 +120,6 @@ const Contact = () => {
                       data-tip="Network 1"
                       style={{ color: githubColor }}
                     ><FaGithub /></NavLink>
-
                     <NavLink
                       to={'https://www.instagram.com/yelmouss/'}
                       target='_blank'
@@ -145,7 +127,6 @@ const Contact = () => {
                       data-tip="Network 1"
                       style={{ color: instagramColor }}
                     ><FaInstagram  /></NavLink>
-
                     <NavLink
                       className="icon BtnCardProject2 fw-bold fs-3"
                       to={'https://wa.me/message/FFKNMPBPAWG4G1'}
@@ -153,7 +134,6 @@ const Contact = () => {
                       data-tip="Network 1"
                       style={{ color: whatsappColor }}
                     ><FaWhatsapp /></NavLink>
-
                     <NavLink
                       to={'https://ma.linkedin.com/in/yelmouss'}
                       target='_blank'
@@ -166,12 +146,9 @@ const Contact = () => {
               </div>
             </Col>
           </Row>
-
         </div>
       </Slide>
     </div>
-
   );
 };
-
 export default Contact;
