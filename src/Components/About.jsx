@@ -104,7 +104,7 @@ const About = () => {
             </Col>
             <Col>
               <Slide direction='left'>
-                <Container>
+                <Container className='text-center'>
                   <h2>Experience  </h2>
                   <br />
                   <Timeline position="alternate">

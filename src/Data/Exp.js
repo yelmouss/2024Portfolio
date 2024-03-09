@@ -1,6 +1,6 @@
 export const Exp = [
   {
-    title: 'Instructor computer Science',
+    title: 'Software Instructor',
     societe: 'GoMyCode',
     anne: 2023,
     ImageUrl: './img/go.webp',
