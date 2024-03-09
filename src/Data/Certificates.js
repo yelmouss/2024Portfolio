@@ -1,4 +1,10 @@
 export const Certifs = [
+
+    {
+        title : 'Web Developer',
+        ImageUrl : './img/Diplome_page-0001.jpg',
+        LinkCert : './img/Diplome.pdf'
+    },
     {
         title : 'Fundamentals of Programming ',
         ImageUrl : 'https://udemy-certificate.s3.amazonaws.com/image/UC-b6d2709c-1c79-4578-bcd2-b063381b9311.jpg',
@@ -21,6 +27,8 @@ export const Certifs = [
         ImageUrl : 'https://udemy-certificate.s3.amazonaws.com/image/UC-423fe982-2c49-4d12-b473-cb300e802ab4.jpg',
         LinkCert : 'https://www.udemy.com/certificate/UC-423fe982-2c49-4d12-b473-cb300e802ab4/'
     },
+
+    
     {
         title : 'Data Science and Machine Learning Developer',
         ImageUrl : 'https://udemy-certificate.s3.amazonaws.com/image/UC-3301bd34-312f-4eb4-954d-3f984206e690.jpg',

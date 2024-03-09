@@ -131,7 +131,7 @@ const About = () => {
                   {/* <h5 className='textlightbrand'> Committed to delivering high-quality and user-friendly solutions for a seamless online experience</h5> */}
                   <br />
                   <hr />
-                  <h2>Certificates  </h2>
+                  <h2>Diploma & Certificates  </h2>
                   <Slider {...settings}>
                     {
                       Certifs.map((item, index) => (

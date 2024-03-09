@@ -6,6 +6,15 @@ export const Exp = [
     ImageUrl: './img/go.webp',
     direction: 'left'
   },
+
+  {
+    title: 'Workforce Manager',
+    societe: 'Sitel Group',
+    anne: 2022,
+    ImageUrl: 'https://play-lh.googleusercontent.com/ctMXLLyPuzq9frOdd8YiuZoiuPYo-haLzOrlHIyKW0k_34htn43-6jUJRSdZ85g8BBBF',
+    direction: 'left'
+  },
+  
   {
     title: 'Web developer',
     societe: 'Intelcia',
