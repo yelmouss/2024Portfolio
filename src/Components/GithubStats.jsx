@@ -1,16 +1,13 @@
 
 import React, { useEffect, useState } from 'react';
-import { VictoryPie, VictoryLabel } from 'victory';
+import { VictoryPie } from 'victory';
 
 const LanguagesStats = () => {
     const [languageStats, setLanguageStats] = useState([]);
-
     useEffect(() => {
-        const accessToken = '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';
-
-        fetch('https://api.github.com/user/repos', {
+         fetch('https://api.github.com/user/repos', {
             headers: {
-                Authorization: `Bearer ${accessToken}`,
+                Authorization: `Bearer ${process.env.REACT_APP_API_URL}`,
             },
         })
             .then((response) => response.json())
