@@ -15,7 +15,19 @@ const App = () => {
     ReactGA.initialize('G-NSE8GHV1SG');
   }, []);
 
-  
+  window.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+  });
+
+
+  window.addEventListener('blur', () => {
+    document.title = "Come Back To Portfolio"
+  });
+
+  window.addEventListener('focus', () => {
+    document.title = "Yelmouss"
+  });
+
   return (
     <>
       <Font family='Genos'>
