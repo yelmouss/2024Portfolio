@@ -40,7 +40,7 @@ const LanguagesStats = () => {
     return (
         <div className='container d-flex flex-column align-items-center'>
             <h5 className='align-self-start'>Programming Languages and Frameworks Statistics from GIT repositories</h5>
-            <div style={{ maxWidth: '100%' }} className='col-lg-7'>
+            <div style={{ maxWidth: '100%' }} className='col-lg-7 col-9'>
 
                 <VictoryPie
                     colorScale={["#ff6384", "#36a2eb", "#ffce56", "#4bc0c0", "#9966ff", "#ff9f40", "#80ff80", "#ff6666", "#6699ff", "#ff9999"]}

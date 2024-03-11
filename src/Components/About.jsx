@@ -89,34 +89,37 @@ const About = () => {
                     </ul>
                   </Col>
                 </Row>
-                </Slide>
-                <LanguagesStats />
-                <hr />
-             
-               
-                 
-                  <h2 className='text-center'>Diploma & Certificates  </h2>
-                <h5 className='textlightbrand text-center' >  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
+              </Slide>
+              <LanguagesStats />
+              <hr />
 
-                  <Slider {...settings}>
-                    {
-                      Certifs.map((item, index) => (
-                        <div className="p-2" key={index}>
-                          <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " >
-                            <NavLink target='_blank' to={item.LinkCert}>
-                              <Card.Img variant="top" src={item.ImageUrl} />
-                            </NavLink>
-                            <Card.Body>
-                              <Card.Title className='text-truncate'>{item.title}
-                              </Card.Title>
-                            </Card.Body>
-                          </Card>
-                        </div>
 
-                      ))
-                    }
-                  </Slider>
-             
+
+              <h2 className='text-center'>Diploma & Certificates  </h2>
+              <h5 className='textlightbrand text-center' >  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
+              <Container>
+                <Slider {...settings}>
+                  {
+                    Certifs.map((item, index) => (
+                      <div className="p-2" key={index}>
+                        <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " >
+                          <NavLink target='_blank' to={item.LinkCert}>
+                            <Card.Img variant="top" src={item.ImageUrl} />
+                          </NavLink>
+                          <Card.Body>
+                            <Card.Title className='text-truncate'>{item.title}
+                            </Card.Title>
+                          </Card.Body>
+                        </Card>
+                      </div>
+
+                    ))
+                  }
+                </Slider>
+
+
+              </Container>
+
             </Col>
             <Col>
               <Slide direction='left'>
@@ -156,7 +159,7 @@ const About = () => {
                     ))}
                   </Timeline>
                   {/* <h5 className='textlightbrand'> Committed to delivering high-quality and user-friendly solutions for a seamless online experience</h5> */}
-               
+
                 </Container>
               </Slide>
             </Col>
