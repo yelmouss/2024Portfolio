@@ -10,6 +10,7 @@ import Footer from './Components/Footer';
 import Font from 'react-font';
 import Services from './Components/Services';
 
+
 const App = () => {
   useEffect(() => {
     ReactGA.initialize('G-NSE8GHV1SG');
@@ -18,16 +19,12 @@ const App = () => {
   window.addEventListener('contextmenu', (e) => {
     e.preventDefault();
   });
-
-
   window.addEventListener('blur', () => {
     document.title = "Come Back To Portfolio"
   });
-
   window.addEventListener('focus', () => {
     document.title = "Yelmouss"
   });
-
   return (
     <>
       <Font family='Genos'>
@@ -41,6 +38,8 @@ const App = () => {
                   <Home />
                   <Services />
                   <About />
+                
+                  
                   <Works />
                   <Contact />
                 </>

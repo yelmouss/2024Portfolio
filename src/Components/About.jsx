@@ -17,6 +17,7 @@ import Typography from '@mui/material/Typography';
 import { Exp } from '../Data/Exp';
 import { Certifs } from '../Data/Certificates';
 import { NavLink } from 'react-router-dom';
+import LanguagesStats from './GithubStats';
 const About = () => {
   const [slidesToShow, setSlidesToShow] = useState(3); // Par défaut, 3 éléments par diapositive
   const settings = {
@@ -88,6 +89,37 @@ const About = () => {
                     </ul>
                   </Col>
                 </Row>
+                </Slide>
+                <LanguagesStats />
+                <hr />
+             
+               
+                 
+                  <h2 className='text-center'>Diploma & Certificates  </h2>
+                <h5 className='textlightbrand text-center' >  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
+
+                  <Slider {...settings}>
+                    {
+                      Certifs.map((item, index) => (
+                        <div className="p-2" key={index}>
+                          <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " >
+                            <NavLink target='_blank' to={item.LinkCert}>
+                              <Card.Img variant="top" src={item.ImageUrl} />
+                            </NavLink>
+                            <Card.Body>
+                              <Card.Title className='text-truncate'>{item.title}
+                              </Card.Title>
+                            </Card.Body>
+                          </Card>
+                        </div>
+
+                      ))
+                    }
+                  </Slider>
+             
+            </Col>
+            <Col>
+              <Slide direction='left'>
                 <h2 className='textlightbrand'><GrCertificate /> Web Developer</h2>
                 <p> 2020 - 2023 </p>
                 <p>
@@ -99,11 +131,6 @@ const About = () => {
                 <h2 className='textlightbrand'> <GrCertificate /> Bachelor in economics & business management</h2>
                 <p>2011 - 2014</p>
                 <p> Completed the Bachelor's program in Science at Science City between 2010 and 2014. The coursework covered a range of scientific disciplines, providing a solid foundation for further academic and professional pursuits.</p>
-                <h5 className='textlightbrand'>  <IoRocketOutline /> Certified in both F/E and B/E technologies. I developed applications and programs that made the work amazing</h5>
-              </Slide>
-            </Col>
-            <Col>
-              <Slide direction='left'>
                 <Container className='text-center'>
                   <h2>Experience  </h2>
                   <br />
@@ -129,27 +156,7 @@ const About = () => {
                     ))}
                   </Timeline>
                   {/* <h5 className='textlightbrand'> Committed to delivering high-quality and user-friendly solutions for a seamless online experience</h5> */}
-                  <br />
-                  <hr />
-                  <h2>Diploma & Certificates  </h2>
-                  <Slider {...settings}>
-                    {
-                      Certifs.map((item, index) => (
-                        <div className="p-2" key={index}>
-                          <Card className="text-center mb-4  p-3 rounded bg-transparent text-light p-0 " >
-                            <NavLink target='_blank' to={item.LinkCert}>
-                              <Card.Img variant="top" src={item.ImageUrl} />
-                            </NavLink>
-                            <Card.Body>
-                              <Card.Title className='text-truncate'>{item.title}
-                              </Card.Title>
-                            </Card.Body>
-                          </Card>
-                        </div>
-
-                      ))
-                    }
-                  </Slider>
+               
                 </Container>
               </Slide>
             </Col>
