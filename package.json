@@ -33,6 +33,7 @@
     "slick-carousel": "^1.8.1",
     "tsparticles-slim": "^2.12.0",
     "victory": "^36.9.1",
+    "victory-tooltip": "^36.9.1",
     "web-vitals": "^2.1.0"
   },
   "scripts": {
