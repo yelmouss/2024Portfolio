@@ -20,7 +20,6 @@ const App = () => {
     e.preventDefault();
   });
 
-
   window.addEventListener('blur', () => {
     document.title = "Come Back To Portfolio"
   });
@@ -39,9 +38,7 @@ const App = () => {
                 <>
                   <Home />
                   <Services />
-                  <About />
-                
-                  
+                  <About />                              
                   <Works />
                   <Contact />
                 </>
