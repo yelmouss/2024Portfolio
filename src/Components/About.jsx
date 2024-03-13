@@ -112,14 +112,10 @@ const About = () => {
                           </Card.Body>
                         </Card>
                       </div>
-
                     ))
                   }
                 </Slider>
-
-
               </Container>
-
             </Col>
             <Col>
               <Slide direction='left'>
@@ -159,7 +155,6 @@ const About = () => {
                     ))}
                   </Timeline>
                   {/* <h5 className='textlightbrand'> Committed to delivering high-quality and user-friendly solutions for a seamless online experience</h5> */}
-
                 </Container>
               </Slide>
             </Col>
